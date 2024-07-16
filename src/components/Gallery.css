@@ -1,0 +1,45 @@
+/* General styling for the entire gallery container */
+.gallery {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px; /* Adjust based on your layout needs */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styling for each specific gallery section */
+  .team-gallery, .swim-gallery, .bike-gallery, .run-gallery {
+    margin-bottom: 30px; /* Space between each carousel */
+    width: 100%; /* Ensures each gallery section takes full width */
+  }
+  
+  /* Common header styling for all gallery sections */
+  .team-gallery h2, .swim-gallery h2, .bike-gallery h2, .run-gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark grey text color */
+    font-size: 1.5rem; /* Larger text for visibility */
+  }
+  
+  /* Styling for carousel items */
+  .carousel .carousel-item {
+    text-align: center; /* Center images within the carousel item */
+  }
+  
+  .carousel .carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures images are block level to handle margins correctly */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .gallery {
+      padding: 10px;
+    }
+  
+    .team-gallery h2, .swim-gallery h2, .bike-gallery h2, .run-gallery h2 {
+      font-size: 1.2rem; /* Smaller font size for smaller screens */
+    }
+  }

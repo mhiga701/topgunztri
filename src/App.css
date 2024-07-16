@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', sans-serif;
+  
+}
+
+/* .athlete-pic {
+  width: 10%;
+  height: 5%;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+} */
+
+.athleteh1 {
+  padding-top: 20px;
+  background-color: #f8f8f8;
+}
+
+.contact-map {
+  width: 10%;
+  height: 25%;
+}
+/* 
+.athlete-profile {
+  margin: 20px;
+
+} */
+.athlete-profile {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-bottom: 20px; */
+  background-color: #f8f8f8;
+}
+.sponsor-profile {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-bottom: 20px; */
+  background-color: #f8f8f8;
+}
+
+.profile-image {
+  flex: 1 1 50%; /* Each takes up half of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-details {
+  flex: 1 1 50%;
+  justify-content: left;
+  align-items: left;
+
+}
+
+.profile-details h2 {
+  font-weight: bold; 
+  /* font-family: 'Merriweather', sans-serif;  */
+  margin-bottom: 10px;
+  text-align: center;
+}
+.sponsor-profile-details {
+  flex: 1 1 50%;
+  justify-content: left;
+  align-items: left;
+
+}
+
+.sponsorsh1 {
+  padding-top: 20px;
+  background-color: #f8f8f8;
+  font-size: 4rem;
+  padding-bottom: 10px;
+}
+
+.sponsor-profile-details h2 {
+  font-weight: bold; 
+  /* font-family: 'Merriweather', sans-serif;  */
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.profile-details p {
+  font-weight: normal; 
+  margin: 5px;
+  /* font-family: 'Lato', sans-serif;  */
+}
+
+.image-left .profile-image {
+  order: 0; /* Image on the left */
+}
+
+.image-right .profile-image {
+  order: 1; /* Image on the right */
+}
+
+.athlete-pic {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.sponsor-pic {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sponsor-profile-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home,
+.about,
+.athletes,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.about-pic {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.about-header {
+  position: relative;
+  text-align: center;
+  color: #fff; /* White text for visibility */
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.about-container {
+  color: #333; /* Darker text color for readability */
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background for the content area */
+}
+
+/* Ensure the rest of the about page content is styled appropriately */
+.about-container p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* .about {
+  background-image: url('/images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+} */
+
+.about-pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: -500px;
+  font-size: 4vh;
+}
+
+.about {
+  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.about > h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: -100px;
+}
+
+.about > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.athletes {
+  /* background-image: url('/images/img-1.jpg'); */
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url('/images/img-8.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+
+
+.about-par {
+  margin-bottom: 20px;
+}
+
+.about-content {
+  margin-top: 20px;
+}
+
