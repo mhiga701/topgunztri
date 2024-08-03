@@ -17,8 +17,6 @@ export default function SignUp() {
           <h2>Contact Number</h2>
           <p>Phone: <a href="tel:+19783376717">978-337-6717</a></p>
 
-          <h2>Address</h2>
-          <p>45 Mountain Rd, Brookline, NH 03033</p>
         </div>
         <div className="contact-map">
           <img src="/images/cyclingabout.jpg" alt="Map to our location" />

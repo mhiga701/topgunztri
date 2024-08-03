@@ -63,9 +63,12 @@
   text-align: center;
 }
 .sponsor-profile-details {
-  flex: 1 1 50%;
-  justify-content: left;
-  align-items: left;
+  display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates four columns */
+    grid-auto-rows: minmax(100px, auto); /* Optional: Adjust row height */
+    gap: 20px; /* Space between logos */
+    justify-items: center; /* Center logos in their grid cells */
+    padding: 20px;
 
 }
 
@@ -76,13 +79,7 @@
   padding-bottom: 10px;
 }
 
-.sponsor-profile-details h2 {
-  font-weight: bold; 
-  /* font-family: 'Merriweather', sans-serif;  */
-  font-size: 3rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
+
 
 .profile-details p {
   font-weight: normal; 
@@ -106,10 +103,9 @@
 }
 
 .sponsor-pic {
-  width: 50%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
+  max-width: 300px; /* Maximum logo width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
 }
 
 .profile-details {
