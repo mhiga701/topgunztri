@@ -5,7 +5,7 @@ import Footer from '../Footer';
 
 export default function SignUp() {
   return (
-<div className="contact-us">
+    <div className="contact-us">
       <h1 className='headingcontact'>Contact Us</h1>
       <div className="contact-wrapper">
         <div className="contact-info">
@@ -17,6 +17,13 @@ export default function SignUp() {
           <h2>Contact Number</h2>
           <p>Phone: <a href="tel:+19783376717">978-337-6717</a></p>
 
+          {/* Add Join Us Button */}
+          <h2>Interested?</h2>
+          <p>Fill out the Google form below.</p>
+
+          <a href="https://your-google-form-link.com" target="_blank" rel="noopener noreferrer" className="join-us-button">
+            Join Us
+          </a>
         </div>
         <div className="contact-map">
           <img src="/images/cyclingabout.jpg" alt="Map to our location" />

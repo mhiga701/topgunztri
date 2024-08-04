@@ -7,15 +7,15 @@ export default function Gallery() {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 1
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 1
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 1
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -43,41 +43,27 @@ const runPhotos = Array.from({ length: numRunPhotos }, (_, index) => `/images/ru
             <img src={img} alt={`Team Photo ${index + 1}`} style={{ width: "100%", height: "auto" }} />
           </div>
         ))}
+        {swimPhotos.map((img, index) => (
+          <div key={index}>
+            <img src={img} alt={`Swim Photo ${index + 1}`} style={{ width: "100%", height: "auto" }} />
+          </div>
+        ))}
+        {bikePhotos.map((img, index) => (
+          <div key={index}>
+            <img src={img} alt={`Bike Photo ${index + 1}`} style={{ width: "100%", height: "auto" }} />
+          </div>
+        ))}
+        {runPhotos.map((img, index) => (
+          <div key={index}>
+            <img src={img} alt={`Run Photo ${index + 1}`} style={{ width: "100%", height: "auto" }} />
+          </div>
+        ))}
+        
       </Carousel>
     </div>
 
-    <div className="swim-gallery">
-    <h2 className='swimh2'>Swim Photos</h2>
-    <Carousel responsive={responsive}>
-    {swimPhotos.map((img, index) => (
-        <div key={index}>
-        <img src={img} alt={`swim Photo ${index + 1}`} style={{ width: "100%", height: "auto" }} />
-        </div>
-    ))}
-    </Carousel>
-    </div>
-
-    <div className="bike-gallery">
-    <h2 className='bikeh2'>Bike Photos</h2>
-    <Carousel responsive={responsive}>
-    {bikePhotos.map((img, index) => (
-        <div key={index}>
-        <img src={img} alt={`bike Photo ${index + 1}`} style={{ width: "100%", height: "auto" }} />
-        </div>
-    ))}
-    </Carousel>
-    </div>
-
-    <div className="run-gallery">
-    <h2 className='runh2'>Run Photos</h2>
-    <Carousel responsive={responsive}>
-    {runPhotos.map((img, index) => (
-        <div key={index}>
-        <img src={img} alt={`run Photo ${index + 1}`} style={{ width: "100%", height: "auto" }} />
-        </div>
-    ))}
-    </Carousel>
-    </div>
+  
+ 
 </div>
   );
 }
